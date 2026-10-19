@@ -1,3 +1,8 @@
+# Patch untuk cloud environment (wajib di awal)
+import os
+os.environ["OPENCV_VIDEOIO_PRIORITY_MSMF"] = "0"
+os.environ["OPENCV_LOG_LEVEL"] = "ERROR"
+
 import streamlit as st
 import cv2
 import numpy as np
